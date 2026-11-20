@@ -53,6 +53,7 @@ Basis data `db_inventaris_kelas` terdiri dari dua tabel utama yang saling berela
 ## 2. Alur Cara Kerja Program
 
 ### A. Alur Siklus Permintaan (Request Lifecycle)
+```
 [ Pengguna / Browser ]
 │ (Request URL: page, action, id)
 ▼
@@ -69,6 +70,7 @@ Basis data `db_inventaris_kelas` terdiri dari dua tabel utama yang saling berela
 │
 ▼ (Render HTML)
 [ Tampilan Browser ]
+```
 
 1. **Permintaan Pengguna (Request)**: Pengguna mengakses URL tertentu di browser (misal: `index.php?page=aset&action=index`).
 2. **Pemeriksaan Rute (Routing)**: Berkas `index.php` memuat konfigurasi (`config.php`), membaca parameter `page` untuk menentukan controller (`AsetController` atau `RuanganController`), dan membaca parameter `action` untuk menentukan metode yang akan dijalankan.
